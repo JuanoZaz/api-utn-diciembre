@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "priomera aproximacion a APIS con Node y express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanoZaz/api-utn-diciembre.git"
+  },
+  "keywords": [
+    "juiano",
+    "oct"
+  ],
+  "author": "juano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanoZaz/api-utn-diciembre/issues"
+  },
+  "homepage": "https://github.com/JuanoZaz/api-utn-diciembre#readme"
+}
