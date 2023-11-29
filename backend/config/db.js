@@ -12,8 +12,8 @@ const mongoose = require("mongoose");
 
 const options = {
     maxPoolSize: 100,
- useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 };
  //exports.options = options;
 

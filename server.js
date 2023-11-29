@@ -1,6 +1,6 @@
 // require("dotenv").config();
+const express = require('express'); 
 require("./backend/config/db.js");
- const express = require('express'); 
 
 // import express from "express";
 // import "./backend/config/db.js";
@@ -25,19 +25,22 @@ const server = express();
 //    // res.sendStatus(200);
 // });
 
+
+//  express core MIDDLeWARES en medio de
+server.use(express.static('public'));
+server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
+
 // LLAMAR A LAS RUTAS DE USUARIOS users routing
 
-server.use("/api/users", require("./backend/users/userRt.js")); // RUTA DE LOS USUARIOS
+server.use("/api/users", require("./backend/users/usersRt.js")); // RUTA DE LOS USUARIOS
 // esto de arriba es una declaracion nada mas /api/users
-
-
-server.use(express.static('public'));
 
 server.listen(PORT, (err) => {
     
-   !err?
+   !err ?
 
-       console.log(`server up: http://localhost:${PORT}`)
+       console.log(`Server up: http://localhost:${PORT}`)
        :
-       console.log(`server down du to: ${err}`);
+       console.log(`Server down du to: ${err}`);
 });
